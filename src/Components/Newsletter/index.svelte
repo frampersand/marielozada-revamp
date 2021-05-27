@@ -14,7 +14,7 @@
 
 </style>
 
-<div class="newsletter">
+<div class="newsletter" id="newsletter">
     <div class="row">
         <h3>{t(selectedLanguage, 'newsletter')}</h3>
         <div class="col-md-6 col-xs-12">

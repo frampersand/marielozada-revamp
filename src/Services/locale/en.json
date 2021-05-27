@@ -22,5 +22,8 @@
     "contact_form_subject": "Subject",
     "contact_form_email": "Email",
     "contact_form_message": "Message",
-    "contact_form_send": "Send"
+    "contact_form_send": "Send",
+    "contact_form_missing_data": "Please fill all the fields before sending",
+    "contact_form_success": "Message sent successfully! I'll get back to you soon",
+    "piece_publish_date": "Published on"
 }

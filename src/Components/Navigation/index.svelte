@@ -18,13 +18,13 @@
 
 <nav id="nav">
   <div class="ml-nav">
-    <div class="ml-logo"></div>
+    <a class="ml-logo" href="#main"><div></div></a>
     <div class="ml-sections">
       <ul>
-        <li><a href="#section1" >{t(selectedLanguage, 'about')}</a></li>
-        <li><a href="#section2" >{t(selectedLanguage, 'works')}</a></li>
-        <li><a href="#section3" >{t(selectedLanguage, 'newsletter')}</a></li>
-        <li><a href="#section4" >{t(selectedLanguage, 'contact')}</a></li>
+        <li><a href="#about" >{t(selectedLanguage, 'about')}</a></li>
+        <li><a href="#works" >{t(selectedLanguage, 'works')}</a></li>
+        <li><a href="#newsletter" >{t(selectedLanguage, 'newsletter')}</a></li>
+        <li><a href="#contact" >{t(selectedLanguage, 'contact')}</a></li>
       </ul>
     </div>
     <div class="ml-language">

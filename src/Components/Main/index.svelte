@@ -13,7 +13,7 @@
 <style src="./style.scss">
 </style>
 
-<div class="row main">
+<div class="main" id="main">
 	<div class="content row">
 		<div class="col-md-6 ml-details">
 			<p class="ml-greeting">{t(selectedLanguage, 'main_greetings')}</p>

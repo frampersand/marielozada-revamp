@@ -13,4 +13,19 @@
         font-size: 1.8rem;
         margin-bottom: 0;
     }
+    .send-button{
+        background-color: #f4d4c9;
+        padding: 1rem;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    .form-container{
+        position: relative;
+        .toast-container{
+            margin: 0 0 0 auto;
+            position: absolute;
+            bottom: 0;
+        }
+    }    
 }

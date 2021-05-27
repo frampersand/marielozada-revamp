@@ -4,9 +4,14 @@ import { Http } from '@Services';
 import {link} from 'svelte-spa-router'
 import ImageSkeleton from '@Components/Piece/ImageSkeleton';
 import Skeleton from '@Components/Piece/Skeleton';
+import {language} from '../../Store/language';
+import {t} from '../../Services/Dictionary';
+let selectedLanguage;
+language.subscribe(value => {
+	selectedLanguage = value;
+});
 export let params;
 const {wild: id} = params;
-console.log(id);
 let piece;
 let date;
 let loading = true;
@@ -53,7 +58,7 @@ onMount(async function() {
 						<Skeleton></Skeleton>      
 					{:else if !loading}
 						<p class="ml-date"> 
-							Publicada el { date } 
+							{t(selectedLanguage, 'piece_publish_date')} { date } 
 						</p>
 						<div class="ml-post-content">
 							{ @html piece.content.rendered}

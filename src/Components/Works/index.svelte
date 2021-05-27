@@ -35,7 +35,7 @@
 <style src="./style.scss">
 </style>
 
-<div class="works">
+<div class="works" id="works">
         <div class="row">
             <div class="title-decorator"></div>
             <div class="works-decorator"></div>

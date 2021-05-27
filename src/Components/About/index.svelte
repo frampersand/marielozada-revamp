@@ -14,7 +14,7 @@
 
 </style>
 
-<div class="about">
+<div class="about" id="about">
 	<div class="row">
 		<h3>{t(selectedLanguage, 'about')}</h3>
 		<div class="col-12">

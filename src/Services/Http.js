@@ -5,16 +5,12 @@ require('isomorphic-fetch');
 import { stringify } from 'query-string';
 //#endregion Global Imports
 
-// const BaseUrl = `${process.env.API_URL}/api`;
-const BaseUrl = '';
-
 export const Http = {
     Request: async (methodType, url, params, payload) => {
-        console.log(url);
         return new Promise((resolve, reject) => {
             const query = params ? `?${stringify(params)}` : '';
             window
-                .fetch(`${BaseUrl}${url}${query}`, {
+                .fetch(`${url}${query}`, {
                     body: JSON.stringify(payload),
                     cache: 'no-cache',
                     headers: {

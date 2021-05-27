@@ -22,5 +22,8 @@
     "contact_form_subject": "Asunto",
     "contact_form_email": "Correo electrónico",
     "contact_form_message": "Mensaje",
-    "contact_form_send": "Enviar"
+    "contact_form_send": "Enviar",
+    "contact_form_missing_data": "Por favor, rellena todos los campos antes de enviar",
+    "contact_form_success": "¡Mensaje enviado exitosamente! Pronto me comunicaré contigo",
+    "piece_publish_date": "Publicado el"
 }
