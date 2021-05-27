@@ -1,0 +1,43 @@
+.skeleton{
+    .date{
+        height: 2rem;
+        width: 200px;
+        background: #f4d4c9;;
+        border-radius: 1rem;
+        margin: 0 0 3rem auto;
+    }
+    .p1, .p2, .p3{
+        height: 2rem;
+        width: 100%;
+        background: #f4d4c9;;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    @keyframes loading {
+        0%   {opacity: 10%}
+        50%  {opacity: 100%}
+        100% {opacity: 10%}
+    }
+
+    .date{
+        animation-name: loading;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    .p1{
+        animation-name: loading;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+    }
+    .p2{
+        animation-name: loading;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    .p3{
+        animation-name: loading;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+}

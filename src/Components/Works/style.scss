@@ -1,0 +1,48 @@
+.works {
+    padding-top: 4rem;
+    .works-decorator{
+        position: relative;
+        
+        @media (min-width: 768px) { 
+            &::after{
+                content: '';
+                position: absolute;
+                width: 350px;
+                height: 350px;
+                background-color: #f8ebde;
+                left: 55%;
+                top: 100px;
+                border-radius: 100%;
+            }
+        }
+    }
+    
+    .title-decorator{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            background-color: #f8ebde;
+            left: -50px;
+            top: -60px;
+            border-radius: 100%;
+        }
+    }
+    .card{
+        background: none;
+        border: none;
+        margin: 1rem;
+        cursor: pointer;
+        .card-body{
+            padding: 0;
+        }
+        .card-title{
+            padding: 0.5rem 0;
+            color: #efb6a5;
+            font-family: 'Abril Fatface';
+            font-size: 1.8rem;
+        }
+    }
+}

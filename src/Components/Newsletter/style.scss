@@ -1,0 +1,79 @@
+.newsletter {
+    padding-top: 4rem;
+
+    .ml-newsletter-cover {
+        position: relative;
+
+        .ml-decorator-double {
+            position: absolute;
+            top: 50px;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            z-index: 2;
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background-color: #efb6a5;
+                right: 0;
+                top: -50px;
+                border-radius: 100%;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 110px;
+                height: 110px;
+                background-color: #f1e9d1;
+                left: -15px;
+                bottom: -15px;
+                border-radius: 100%;
+            }
+        }
+
+        .ml-decorator-single {
+            @media (min-width: 1083px) {
+                position: absolute;
+                top: 50px;
+                width: 300px;
+                height: 300px;
+                margin: auto;
+                left: 0;
+                right: 0;
+                z-index: 1;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 300px;
+                    height: 300px;
+                    background-color: #f8ebde;
+                    right: -150px;
+                    border-radius: 100%;
+                }
+            }
+        }
+
+        .ml-cover {
+            z-index: 3;
+            background: url('../../Assets/img/ml-newsletter-cover.jpg');
+            height: 300px;
+            width: 300px;
+            position: relative;
+            margin: auto;
+            border-radius: 100%;
+            background-size: 300px;
+            background-repeat: no-repeat;
+            background-position: center;
+            left: 0;
+            right: 0;
+            top: 50px;
+        }
+    }
+}

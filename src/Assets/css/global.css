@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Abril Fatface";
+  src: url("../fonts/AbrilFatface-Regular.ttf") format("ttf");
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  padding-bottom: 4rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+  background-color: #FAF7EB !important;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a{
+  color: #efb6a5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h3{
+  font-family: 'Abril Fatface';
+  color: #c59049;
+  position: relative;
+  margin-bottom: 2rem;
+}
+h3:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  background: #ddd2b5;
+  height: 1px;
+  bottom: 0;
+  left: calc(var(--bs-gutter-x)/ 2);
+}
+
+p{
+  margin-bottom: 1rem;
+}
+
+.form-control{
+  background-color: transparent;
+  border-radius: 0;
+  border-color: #ddd2b5;
+  border-width: 1px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-button input{
+  background-color: #f4d4c9;
+  padding: 1rem;
+  border: none;
+  color: white;
+}

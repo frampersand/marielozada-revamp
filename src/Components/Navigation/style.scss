@@ -1,0 +1,161 @@
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #FAF7EB;
+    margin: auto;
+    border-bottom: 1px solid #ddd2b5;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 60%;
+        height: 100%;
+        z-index: 1;
+        background: #FAF7EB;
+    }
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -50%;
+        width: 60%;
+        height: 100%;
+        z-index: 1;
+        background: #FAF7EB;
+    }
+    .ml-logo{
+        background: url('../../Assets/img/logo-mariel-mostaza.png');
+        height: 41px;
+        width: 90px;
+        background-position: center;
+        background-size: cover;
+        z-index: 10;
+    }
+    ul {
+        position: relative;
+        margin: 0;
+        z-index: 2;
+        text-transform: uppercase;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            padding: 1.35em 0;
+            margin-right: 3em;
+            font-size: 0.9em;
+
+            a {
+                text-decoration: none;
+                color: #000;
+                font-size: 0.9em;
+            }
+        }
+    }
+
+    .ml-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ml-language {
+        li{
+            margin-right: 0;
+        }
+        span{
+            cursor: pointer;
+            &.selected{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    @media (max-width: 576px) { 
+        .ml-nav{
+            flex-direction: column;
+            padding-top: 0.5rem;
+            align-items: center;
+        }
+        .ml-sections{
+            width: 100%;
+            padding: 0 1rem;
+            overflow: auto;
+            white-space: nowrap;
+            margin: 0;
+            z-index: 2;
+            text-transform: uppercase;
+            text-align: center;
+
+            li {
+                display: inline-block;
+                padding: 1.35em 0;
+                margin-right: 3em;
+                font-size: 0.9em;
+            }
+            &::-webkit-scrollbar {
+                -webkit-appearance: none;
+                height: 4px;
+              }
+            &::-webkit-scrollbar-thumb {
+            border-radius: 4px;
+            background-color: rgba(244, 212, 201, .8);
+            -webkit-box-shadow: 0 0 1px rgba(244, 212, 201, .8);
+            }
+              
+        }
+        .ml-language{
+            position: absolute;
+            right: 53px;
+        }
+    }
+
+    @media (max-width: 370px) { 
+        .ml-nav{
+            align-items: flex-start;
+            .ml-logo{
+                margin-left: 1rem;
+            }
+        }
+    }
+    
+    @media (min-width: 576px) { 
+        max-width: 540px;
+        .ml-nav{
+            flex-direction: column;
+            padding-top: 0.5rem;
+        }
+        .ml-language{
+            position: absolute;
+            right: 53px;
+        }
+    }
+
+    @media (min-width: 768px) { 
+        max-width: 720px;
+        .ml-nav{
+            flex-direction: row;
+        }
+        .ml-language{
+            position: inherit;
+        }
+    }
+
+    @media (min-width: 992px) { 
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) { 
+        max-width: 1140px;
+    }
+
+    @media (min-width: 1400px){
+        max-width: 1320px;
+    }
+}
