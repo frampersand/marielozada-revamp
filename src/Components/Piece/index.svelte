@@ -61,7 +61,7 @@ onMount(async function() {
 							{t(selectedLanguage, 'piece_publish_date')} { date } 
 						</p>
 						<div class="ml-post-content">
-							{ @html piece.content.rendered}
+							{@html piece.content.rendered}
 						</div>
 					{/if}
 				</div>
