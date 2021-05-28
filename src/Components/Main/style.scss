@@ -13,7 +13,7 @@
         h1{
             color: #c59049;
             font-size: 3rem;
-            font-weight: bold;
+            font-weight: normal;
             margin-bottom: 1rem;
         }
         .ml-social{
@@ -50,6 +50,11 @@
                     background: #f1e8d2;
                     right: -30px;
                     bottom: -75px;
+                }
+                @media (max-width: 570px){
+                    &:after{
+                        right: 50px;
+                    }
                 }
             }
             .ml-cover{
